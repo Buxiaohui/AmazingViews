@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ViewsApplication</string>
+    <string name="origin">原始效果</string>
+    <string name="pull_anim">下拉效果</string>
 </resources>

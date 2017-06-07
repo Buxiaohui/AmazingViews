@@ -9,8 +9,9 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.bxh.viewsapplication.MainActivity">
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:id="@+id/container"
-        android:layout_height="match_parent"></FrameLayout>
+
+    <com.example.bxh.viewsapplication.DefineView
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:background="@color/colorPrimary" />
 </RelativeLayout>
