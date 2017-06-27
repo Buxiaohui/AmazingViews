@@ -10,6 +10,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.bxh.viewsapplication.citys.CitiesFragment;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreatePanelMenu(int featureId, Menu menu) {
         menu.add(0, 0, 2, R.string.origin);
         menu.add(0, 1, 2, R.string.pull_anim);
+        menu.add(0, 2, 2, R.string.cities);
         return super.onCreatePanelMenu(featureId, menu);
     }
 
@@ -52,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
             case 1:
                 fragment = new PullFragment();
                 Toast.makeText(MainActivity.this,R.string.pull_anim,Toast.LENGTH_SHORT).show();
+                break;
+            case 2:
+                fragment = new CitiesFragment();
+                Toast.makeText(MainActivity.this,R.string.cities,Toast.LENGTH_SHORT).show();
                 break;
         }
         if(fragment != null){
